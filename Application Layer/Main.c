@@ -16,8 +16,20 @@
  
  int main (void)
  {
-	 /* Update The Password From the EEPROM */
-	 /* Post Updated Password on the Servers Database */ 
-	 /* Check every PINs on  */
-	 /* Print "Enter Your Password on Every Locked Door" */
+	 LCD_Init();
+	 UART_init();
+	 TWI_init();
+	 while (1)
+	 { 
+		/* Update the Passwords from the EEPROM */
+		/* Post Updated Password on the Server's Database */
+		/* Check the status of "Safety lock" Feature */
+		/* Post Updated status on the Server's Database via WIFI */
+		/* Check every Sensor (Heat, Power Consumption, Magnetic Sensors (Doors - Windows)) */
+		/* Post Updated status on the Server's Database via WIFI */
+		/* Check the Position of light switches */
+		/* Post Updated status on the Server's Database via WIFI */
+		/* Print "Enter Your Password" on Every Locked Door */
+		/* Post Updated status on the Server's Database via WIFI */
+	 }
  }
